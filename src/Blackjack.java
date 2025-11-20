@@ -23,11 +23,19 @@ public class Blackjack {
     public int getDealerTotal() {
         return dealerTotal;
     }
-
+    public int DealerHit()
+    {
+        if (dealerTotal <= 16);
+        {
+            dealerTotal += drawCard();
+            return playerTotal;
+        }
+    }
 
     public void playerHit() {
         playerTotal += drawCard();
     }
+
 
 
 }
